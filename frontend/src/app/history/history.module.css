@@ -1,0 +1,134 @@
+.page { min-height: 100vh; }
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+/* Stats */
+.statsRow {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.miniStat {
+  flex: 1;
+  min-width: 140px;
+  padding: 20px;
+  text-align: center;
+}
+
+.miniStatValue {
+  font-size: 1.6rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.miniStatLabel {
+  font-size: 0.75rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 4px;
+}
+
+/* Attempt list */
+.attemptList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.attemptCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  gap: 16px;
+  animation: fadeInUp 0.4s ease forwards;
+  opacity: 0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.attemptCard:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.attemptInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.attemptTopic {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 6px;
+}
+
+.attemptMeta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.metaText {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.dateText {
+  font-size: 0.78rem;
+  color: #475569;
+}
+
+.attemptRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* Empty */
+.emptyState {
+  padding: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 3rem;
+}
+.emptyState h3 { font-size: 1.2rem; font-weight: 700; }
+.emptyState p { color: #64748b; font-size: 0.9rem; margin-bottom: 8px; }

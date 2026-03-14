@@ -1,0 +1,34 @@
+2026-03-14T13:36:41Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-03-14T13:36:41Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-03-14T13:36:46Z INF +--------------------------------------------------------------------------------------------+
+2026-03-14T13:36:46Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-03-14T13:36:46Z INF |  https://estimates-independent-charms-ending.trycloudflare.com                             |
+2026-03-14T13:36:46Z INF +--------------------------------------------------------------------------------------------+
+2026-03-14T13:36:46Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]
+2026-03-14T13:36:46Z INF Version 2026.3.0 (Checksum 59b12880b24af581cf5b1013db601c7d843b9b097e9c78aa5957c7f39f741885)
+2026-03-14T13:36:46Z INF GOOS: windows, GOVersion: go1.24.13, GoArch: amd64
+2026-03-14T13:36:46Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:3000]
+2026-03-14T13:36:46Z INF cloudflared will not automatically update on Windows systems.
+2026-03-14T13:36:46Z INF Generated Connector ID: 74d9e767-47b6-4f12-a32d-ed5865296120
+2026-03-14T13:36:46Z INF Initial protocol quic
+2026-03-14T13:36:46Z INF ICMP proxy will use 10.152.93.56 as source for IPv4
+2026-03-14T13:36:46Z INF ICMP proxy will use 2409:40f4:201e:8b25:282f:cba8:e32f:1ed7 in zone Wi-Fi as source for IPv6
+2026-03-14T13:36:46Z INF cloudflared does not support loading the system root certificate pool on Windows. Please use --origin-ca-pool <PATH> to specify the path to the certificate pool
+2026-03-14T13:36:46Z INF ICMP proxy will use 10.152.93.56 as source for IPv4
+2026-03-14T13:36:47Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-03-14T13:36:47Z INF ICMP proxy will use 2409:40f4:201e:8b25:282f:cba8:e32f:1ed7 in zone Wi-Fi as source for IPv6
+2026-03-14T13:36:47Z INF Starting metrics server on 127.0.0.1:20245/metrics
+2026-03-14T13:36:48Z INF Registered tunnel connection connIndex=0 connection=9e483ebe-153a-4680-af20-2d949ec0de43 event=0 ip=198.41.200.193 location=bom10 protocol=quic
+2026-03-14T13:38:38Z ERR failed to accept incoming stream requests error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.193
+2026-03-14T13:38:38Z ERR failed to run the datagram handler error="context canceled" connIndex=0 event=0 ip=198.41.200.193
+2026-03-14T13:38:38Z ERR failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.200.193
+2026-03-14T13:38:38Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.200.193
+2026-03-14T13:38:38Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.200.193
+2026-03-14T13:38:39Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-03-14T13:38:41Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:63268->198.41.200.193:7844: wsasendto: A socket operation was attempted to an unreachable network." connIndex=0 event=0 ip=198.41.200.193
+2026-03-14T13:38:41Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.200.193
+2026-03-14T13:38:43Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.33
+2026-03-14T13:38:46Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:63268->198.41.200.33:7844: wsasendto: A socket operation was attempted to an unreachable network." connIndex=0 event=0 ip=198.41.200.33
+2026-03-14T13:38:46Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=198.41.200.33
+2026-03-14T13:38:52Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.57
+2026-03-14T13:38:54Z INF Registered tunnel connection connIndex=0 connection=b7e8e040-165b-4014-b46f-9a377a9b4aa9 event=0 ip=198.41.192.57 location=maa04 protocol=quic
