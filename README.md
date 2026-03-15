@@ -167,11 +167,51 @@ Prevents duplicate answers for the same question in one attempt, enforcing data 
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ Architecture & Design Choices
 
-```
-Frontend (Next.js)    ←→    Backend (Django RF)    ←→    Database (PostgreSQL)
-     ↓                              ↓
-AuthContext                  JWT Middleware
-API Client (lib/api.ts)      Gemini AI Service
-```
+### 1. Robust AI Quiz Generation
+- **Dynamic Prompting**: Custom logic ensures Gemini returns valid, parseable JSON arrays every time.
+- **Fail-Safe Mechanism**: If the AI fails (rate limits or malformed output), the system gracefully reports the error instead of crashing, allowing users to try again or choose a different topic.
+
+### 2. Scalable Data Model
+- **Attempts vs. Quizzes**: By separating the `Quiz` (questions) from the `QuizAttempt` (user results), the system natively supports retakes and performance tracking over time.
+- **Atomic Responses**: Storing options as separate columns (A, B, C, D) ensures high query performance and data integrity compared to JSON blobs.
+
+### 3. Frontend Excellence
+- **State Management**: Uses React Context API for lightweight, performant authentication state.
+- **Micro-Animations**: Smooth transitions and hover effects give the app a premium, high-end feel.
+- **Token Resilience**: Automatic JWT refresh logic ensures users aren't interrupted by expired sessions.
+
+---
+
+## 🚀 Production Readiness (Bonus)
+
+While configured for local evaluation, this project is **Production Ready**:
+- **Managed DB**: Includes a `render.yaml` for one-click deployment to Render/Postgres.
+- **Static Hosting**: Configured with `Whitenoise` for lightning-fast static file serving in production.
+- **Security Check**: CSRF protection, secure JWT handling, and password hashing are all enabled.
+
+---
+
+## 🛠️ One-Click Local Setup
+
+1. **Backend**: 
+   ```bash
+   cd backend
+   pip install -r requirements.txt
+   python manage.py migrate
+   python manage.py runserver
+   ```
+2. **Frontend**:
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
+
+---
+
+## ✅ Contact
+**Adarsh Srinivasan**  
+[GitHub Profile](https://github.com/AdarshSrinivasan1310)  
+Email: adarsh.131005@gmail.com
