@@ -1,19 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --bg-primary: #0b0e1a;
-  --bg-secondary: #111827;
-  --bg-card: #1a2235;
-  --bg-card-hover: #1e2a40;
-  --accent-blue: #3b82f6;
-  --accent-purple: #8b5cf6;
-  --accent-cyan: #06b6d4;
-  --accent-gradient: linear-gradient(135deg, #3b82f6, #8b5cf6);
-  --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: #1e293b;
+  --bg-card-hover: #334155;
+  --accent-blue: #38bdf8;
+  --accent-sapphire: #0ea5e9;
+  --accent-gradient: linear-gradient(135deg, #0ea5e9, #2563eb);
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
   --text-muted: #64748b;
-  --border: rgba(255, 255, 255, 0.08);
-  --shadow-glow: 0 0 30px rgba(59, 130, 246, 0.15);
+  --border: rgba(255, 255, 255, 0.1);
+  --shadow-subtle: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 * {
@@ -35,13 +34,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Glass Card */
+/* Professional Card */
 .glass-card {
-  background: rgba(26, 34, 53, 0.8);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-subtle);
 }
 
 /* Gradient text */
@@ -68,8 +66,8 @@ body {
 }
 
 .btn-primary:hover:not(:disabled) {
+  opacity: 0.9;
   transform: translateY(-1px);
-  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
 }
 
 .btn-primary:active:not(:disabled) {
