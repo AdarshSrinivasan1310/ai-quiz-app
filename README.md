@@ -71,4 +71,5 @@ Built with **Django REST Framework** for security and speed:
 
 ## ✅ Contact
 **Adarsh Srinivasan**  
-[GitHub Profile](https://github.com/AdarshSrinivasan1310) | Email: adarsh.131005@gmail.com
+[GitHub Profile:https://github.com/AdarshSrinivasan1310) 
+Email: adarsh131005@gmail.com

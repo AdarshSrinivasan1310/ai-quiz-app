@@ -40,7 +40,7 @@ Integrating LLMs involves handling unpredictability.
 **Solution**: Built a custom `api.ts` utility that handles Axios interceptors. If a token expires, it silently attempts to refresh it before the user even notices a disruption.
 
 ### Challenge: Deployment Friction
-**Solution**: I created a `render.yaml` and a `vercel.json`. Even though the app is complex, it can be deployed to the cloud in one click because all infrastructure-as-code is already in the repo.
+**Solution**: I created a `render.yaml` and a `vercel.json`. Even though the app is complex, it can be deployed to the cloud in one click because all infrastructure-as-code is already in the repo.Also the api-key being exposed was a major hindrance and modification was needed to be done so as to not get blacklisted for the api key
 
 ---
 
@@ -56,4 +56,4 @@ The design evolved from a vibrant, gradient-heavy theme to a **Subtle Enterprise
 
 ---
 **Adarsh Srinivasan**  
-*Senior Full Stack Candidate*
+
